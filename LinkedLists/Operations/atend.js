@@ -63,9 +63,45 @@ class LinkedList {
     this.size++;
   }
   removeFrom(index) {
-    if (index < 0 || index > this.size) {
+    var c = 0,
+      prev,
+      current;
+    current = this.head;
+    prev = current;
+    if (index < 1 || index > this.size) {
       console.log(`Your Entered Posistion is Not Available`);
     } else {
+      if (index == 1) {
+        this.head = this.head.next;
+      } else {
+        while (c < index) {
+          c++;
+          prev = current;
+          current = current.next;
+        }
+
+        // Removing Value
+        prev.next = current.next;
+      }
+      this.size--;
+    }
+  }
+  DeleteElement(value) {
+    var curr = this.head;
+    var prev = null;
+
+    // Iterate all list
+    while (curr != null) {
+      if (curr.value == value) {
+        if (prev == null) {
+          this.head = curr.next;
+        } else {
+          prev.next = curr.next;
+        }
+        this.size--;
+      }
+      prev = curr;
+      curr = curr.next;
     }
   }
 }
@@ -76,4 +112,6 @@ LinkLis.insAtend(30);
 LinkLis.insAtend(40);
 LinkLis.insAtend(50);
 LinkLis.insertWithIdx(230, 4);
+LinkLis.removeFrom(1);
+LinkLis.DeleteElement(30);
 LinkLis.displayValue();
