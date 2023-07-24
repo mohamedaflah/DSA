@@ -16,14 +16,10 @@ function manip(str, n) {
       n = n - 26;
     }
     if (str[i].charCodeAt(0) < 122) {
-      if (n == 2 && str[i] == "Y") {
-        newStr += "A";
-      } else if (n==2 && str[i] == "y") {
-        newStr += "a";
-      } else {
+ 
         ne = ne + n;
         newStr += String.fromCharCode(ne);
-      }
+      
     } else {
       let rev = str[i].charCodeAt(0) - 122 + 96;
       newStr += String.fromCharCode(rev + 2);

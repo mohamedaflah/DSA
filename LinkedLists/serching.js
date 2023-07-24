@@ -57,18 +57,4 @@ li.display();
 let v=li.search(10)
 console.log(v);
 
-// function DoublyLinkedList() {
-//   let Node = (value) => {
-//     this.value = value;
-//     this.next = null;
-//     this.prev = null;
-//   };
-//   let length = 0;
-//   let head = null;
-//   let tail = null;
 
-//   this.add = (value) => {
-//     let node=new Node(value)
-
-//   };
-// }

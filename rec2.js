@@ -4,6 +4,6 @@ function nothing(n) {
   }
   nothing(n - 1);
   console.log(n);
-  nothing(n - 1);
+  // nothing(n - 1);
 }
 nothing(5);
