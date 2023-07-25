@@ -1,7 +1,7 @@
 class node {
-  constructor(value) {
+  constructor(value,next=null) {
     this.value = value;
-    this.next = null;
+    this.next = next;
   }
 }
 class LinkedList {
@@ -14,7 +14,7 @@ class LinkedList {
   }
   prepend(value) {
     const mynode = new node(value);
-    if (this.isEmpty()) {
+    if (this.head==null) {
       this.head = mynode;
     } else {
       mynode.next = this.head;
@@ -71,6 +71,7 @@ Llist.prepend(180);
 Llist.prepend(120);
 Llist.prepend(140);
 Llist.prepend(320);
+Llist.prepend(420);
 Llist.prepend(520);
 Llist.display();
 Llist.deleteNode(1);
