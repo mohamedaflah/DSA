@@ -1,3 +1,9 @@
+//                         ___________________________________________
+//                        |                                          |
+//                        |      Stack Followed Principle is LIFO    |
+//                        |   First in First Out Principle in Stack  |
+//                        |__________________________________________|
+
 class Stack {
   constructor() {
     this.items = [];
