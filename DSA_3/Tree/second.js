@@ -56,7 +56,7 @@ class BinarySearchTree {
     return false;
   }
 
-  //  < Delete Operation Starte >
+  //  < Delete Operation Start >
   Delete(data) {
     // Deleting or Removing Value
     this.#DeleteHelper(data, this.root, null);
