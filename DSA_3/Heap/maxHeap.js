@@ -29,7 +29,6 @@ class MaxHeap {
   }
   heapUp() {
     let currentIndex = this.heap.length - 1;
-
     while (currentIndex > 0) {
       let parentIndex = this.getParentChildIndex(currentIndex);
       if (this.heap[currentIndex] > this.heap[parentIndex]) {
@@ -50,12 +49,12 @@ class MaxHeap {
     return this.heap[0];
   }
 }
-const heap=new MaxHeap();
-heap.insert(10)
-heap.insert(4)
-heap.insert(43)
-heap.insert(12)
-heap.insert(8)
-heap.insert(44)
+const heap = new MaxHeap();
+heap.insert(10);
+heap.insert(4);
+heap.insert(43);
+heap.insert(12);
+heap.insert(8);
+heap.insert(44);
 
-console.log(heap.heap)
+console.log(heap.heap);
