@@ -6,4 +6,4 @@ for(let i=0;i<a.length;i++){
     }
 }
 let avg=sum/c;
-console.log(avg)
+console.log(avg," avergae")
